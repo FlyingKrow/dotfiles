@@ -12,6 +12,9 @@ To install - clone this repo to some temp folder (like ~/.tmp/) by this command 
 3. `./install.sh`
 
 ### It's not full install!
+
+If you want to use my .zshrc configuration, then copy `./zsh/.zshrc` to your home directory manually
+
 You need to manually install some fonts and packages for correct work:
 
 **Fonts:**
