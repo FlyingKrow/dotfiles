@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  "margin-bottom": -5,
+    "modules-left": ["custom/arch", "clock", "hyprland/window"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["wireplumber", "hyprland/language", "memory", "cpu", "disk", "tray"],
+    "custom/arch": {
+      "format": "  ",
+      "on-click": "sh $HOME/.config/rofi/bin/runner"
+    },
+    "wlr/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "󰙯",
+        "urgent": "",
+        "default": "",
+      },
+      "on-click": "activate",
+      "sort-by-number": true,
+      "all-outputs": true
+    },
+    "tray": {
+      "icon-size": 14,
+      "spacing": 15,
+      "show-passive-items": true
+    },
+    "hyprland/window": {
+      "format": "{}"
+    },
+    "hyprland/language": {
+      "format": " {}",
+      "format-en": "EN",
+      "format-ru": "RU"
+    },
+    "memory": {
+      "interval": 5,
+      "format": "<span color='#cba6f7'> </span>{used}GiB",
+    },
+    "cpu": {
+      "interval": 10,
+      "format": "<span color='#cba6f7'> </span>{usage}%",
+      "max-length": 10
+    },
+    "disk": {
+      "interval": 20,
+      "format": "<span color='#cba6f7'>󰋊 </span>{free}"
+    },
+    "clock": {
+      "format": "<span color='#cba6f7'> </span>{:%H:%M:%S}",
+      "interval": 1,
+      "on-click": "kitty calcurse"
+    },
+    "wireplumber": {
+      "format": "<span color='#cba6f7'> </span>{volume}%",
+      "on-scroll-up": "custom_sound_up.sh",
+      "on-scroll-down": "custom_sound_down.sh",
+      "on-click": "/usr/bin/pavucontrol"
+    },
+}

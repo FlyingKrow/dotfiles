@@ -1,0 +1,18 @@
+[global]
+format = "<b>%a\n%s</b>\n%b"
+
+icon_path = "~/.local/share/icons/"
+icon_theme = WhiteSur
+enable_recursive_icon_lookup = true
+
+origin = top-center
+offset = 0x20
+frame_width = 2
+frame_color = "#cba6f7"
+separator_color= frame
+font = "NotoColorEmoji 12"
+font = "Fira Code 10"
+format = "<b>%s</b>\n%b"
+corner_radius = 7
+background = "#11111B"
+foreground = "#CDD6F4"
