@@ -1,6 +1,8 @@
 # dotfiles
 ## My dotfiles on Arch Hyprland
 
+![What r u loocking for?)](./preview.png)
+
 Before start ***make sure you backup your previous config files!***
 
 To install - clone this repo to some temp folder (like ~/.tmp/) by this command and follow simple steps:
