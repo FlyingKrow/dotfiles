@@ -12,7 +12,6 @@ frame_color = "#cba6f7"
 separator_color= frame
 font = "NotoColorEmoji 12"
 font = "Fira Code 10"
-format = "<b>%s</b>\n%b"
 corner_radius = 7
 background = "#11111B"
 foreground = "#CDD6F4"

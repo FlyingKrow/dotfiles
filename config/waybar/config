@@ -3,7 +3,7 @@
   "margin-bottom": -5,
     "modules-left": ["custom/arch", "clock", "hyprland/window"],
     "modules-center": ["wlr/workspaces"],
-    "modules-right": ["wireplumber", "hyprland/language", "memory", "cpu", "disk", "tray"],
+    "modules-right": ["wireplumber", "custom/media", "hyprland/language", "memory", "cpu", "disk", "tray"],
     "custom/arch": {
       "format": "  ",
       "on-click": "sh $HOME/.config/rofi/bin/runner"
@@ -24,6 +24,19 @@
       "on-click": "activate",
       "sort-by-number": true,
       "all-outputs": true
+    },
+    "custom/media": {
+      "format": "{icon}{}",
+      "return-type": "json",
+      "format-icons": {
+        "Playing": " ",
+        "Paused": " ",
+      },
+      "max-length": 30,
+      "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}: {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
     },
     "tray": {
       "icon-size": 14,
@@ -58,8 +71,8 @@
     },
     "wireplumber": {
       "format": "<span color='#cba6f7'> </span>{volume}%",
-      "on-scroll-up": "custom_sound_up.sh",
-      "on-scroll-down": "custom_sound_down.sh",
+      "on-scroll-up": "~/.local/bin/custom_sound_up.sh",
+      "on-scroll-down": "~/.local/bin/custom_sound_down.sh",
       "on-click": "/usr/bin/pavucontrol"
     },
 }
