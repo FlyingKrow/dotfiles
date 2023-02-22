@@ -32,5 +32,6 @@ You need to manually install some fonts and packages for correct work:
 6. calcurse
 7. pavucontrol
 8. grim & slurp (grim is for screen capture and slurp is for select region)
+9. wob
 
 #### This dots will update sometimes!
