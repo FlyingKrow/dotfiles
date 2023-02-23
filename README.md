@@ -25,7 +25,7 @@ You need to manually install some fonts and packages for correct work:
 
 **Packages:**
 1. dunst
-2. hyprpaper
+2. hyprpaper & mpvpaper
 3. wl-clipboard
 4. udiskie
 5. rofi
