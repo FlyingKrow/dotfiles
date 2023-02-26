@@ -5,13 +5,14 @@ icon_path = "~/.local/share/icons/"
 icon_theme = WhiteSur
 enable_recursive_icon_lookup = true
 
+timeout = 2
 origin = top-center
 offset = 0x20
 frame_width = 2
 frame_color = "#cba6f7"
 separator_color= frame
 font = "NotoColorEmoji 12"
-font = "Fira Code 10"
+font = "Shantell Sans 10"
 corner_radius = 7
 background = "#11111B"
 foreground = "#CDD6F4"

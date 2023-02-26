@@ -20,8 +20,10 @@ If you want to use my .zshrc configuration, then copy `./zsh/zshrc` to your home
 You need to manually install some fonts and packages for correct work:
 
 **Fonts:**
-1. Fira Code
+1. Fira Code (not necessary now)
 2. Symbols Nerd Mono
+3. 3270 Nerd Mono
+4. Shantell Sans Regular/Light
 
 **Packages:**
 1. dunst
